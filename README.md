@@ -7,7 +7,7 @@ The encoders matrix aims at controlling hexaphonic audio effects parameters thro
  This project is a part of the developments made for Loïc Reboursière Phd Thesis : 
     "Organology, genealogy and practice of hexaphonic guitar : from independent string effects to instrumental control of other sounds." 
  
-This version is based on an Arduino Micro. It has been directly soldered on two perfboards : one with the rotaries, one with the CD4051s.
+This version is based on a Teensy 3.2. The PCB has been moved to a separate box and Oled display and master rotary encoders has been added.
  
  The folder is organized as follows : 
  ```
@@ -17,10 +17,12 @@ This version is based on an Arduino Micro. It has been directly soldered on two 
  └───datasheet
  └───fritzing
  └───img
+ └───pcb
  └───Pd
  ```
 - cad_drawings : contains a document with drawings of rotaries with the correct spacing.
 - code : contains the code to be uploaded on the microcontroller. Depending on the version you're using, the structure of this folder can change (Arduino sketch or Platform IO (through VS) code).
 - datasheet : datasheets of used components.
 - img : pictures of the different versions of the controller.
+- pcb : files for producing pcb
 - Pd : test pd patches that receive data from the controller and display them.
